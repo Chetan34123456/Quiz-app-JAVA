@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Quizo</string>
+    <string name="quiz_catagory_s">Quiz Category</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="user_name">Chetan Hiwale</string>
+    <string name="userQuizAttended">Quiz attended</string>
+    <string name="userWin">Win</string>
+    <string name="userLoss">Loss</string>
+    <string name="startQuizPage2">Start Quiz</string>
+    <string name="questionText">Question</string>
+    <string name="quiz_question">Which one of the following is Union Territory of India?</string>
+    <string name="quiz_option1">Delhi</string>
+    <string name="quiz_option2">Punjab</string>
+    <string name="quiz_option3">Maharashtra</string>
+    <string name="quiz_option4">Manipur</string>
+    <string name="quiz_end">End Quiz</string>
+    <string name="loginpage_greet">Welcome Back !</string>
+    <string name="login_usernaem">Username</string>
+    <string name="login_password">Password</string>
+    <string name="signUp">Sign Up</string>
+    <string name="artAndCraft">Art and Craft</string>
+    <string name="random">Random</string>
+    <string name="science">Science</string>
+    <string name="Sports">Sports</string>
+    <string name="login">Login</string>
+    <string name="title_activity_login">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="signup_name">Name</string>
+    <string name="sign_up_email">Email</string>
+    <string name="title_activity_signup">signupActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="forget_pass">Forgot Password</string>
+    <string name="coins">Coins</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="editProfile">       Edit Profile</string>
+    <string name="quiz">Quiz</string>
+    <string name="shareApp">  Share App</string>
+    <string name="Logout">  Logout</string>
+    <string name="score">Score</string>
+    <string name="totalquizplayed">Total quiz played</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="contact_number">Contact number</string>
+    <string name="coins_earned">Coins Earned</string>
+    <string name="quizWin">Quiz win</string>
+    <string name="quizLose">Quiz lose</string>
+    <string name="backtohome">Back to Home</string>
+    <string name="anotherQuiz">Another Quiz</string>
+
+</resources>

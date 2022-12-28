@@ -1,0 +1,24 @@
+database
+	users
+		-email
+			--name
+			--username
+			--password
+			--quiz_attended
+			--quiz_lose
+			--quiz_win
+	quiz_questions_bank
+		artAndCraftQuestion
+			question
+				option 1
+					id (question is wrong or right)(boolean)
+				option 2
+					id (question is wrong or right)(boolean)
+				option 3
+					id (question is wrong or right)(boolean)
+				option 4
+					id (question is wrong or right)(boolean)
+	feedback
+		users
+			username
+				feedback_text

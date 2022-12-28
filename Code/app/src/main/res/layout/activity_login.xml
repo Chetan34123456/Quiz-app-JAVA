@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/login_shape"
+        android:layout_width="465dp"
+        android:layout_height="439dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="8dp"
+        tools:ignore="contentDescription"
+        app:layout_constraintBottom_toTopOf="@+id/login_greet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/login_page_circle" />
+
+    <TextView
+        android:id="@+id/login_greet"
+        android:layout_width="260dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/loginpage_greet"
+        android:textColor="#9F30FF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mainUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mainUsername"
+        android:layout_width="332dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="true"
+        android:drawableLeft="@drawable/email_icon"
+        android:ems="10"
+        android:hint="@string/sign_up_email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawableStart="@drawable/email_icon" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="331dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:autofillHints="true"
+        android:hint="@string/login_password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/password_icon"
+        app:layout_constraintBottom_toTopOf="@+id/signUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawableStart="@drawable/password_icon" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="132dp"
+        android:background="@drawable/rounded_corner_button"
+        android:text="@string/signUp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="123dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corner_button"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toEndOf="@+id/signUp"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.007" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingActivity">
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="369dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/quiz_option_bg"
+        android:gravity="center"
+        android:text="@string/Logout"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="412dp"
+        android:layout_height="365dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_marginBottom="73dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <TextView
+                android:id="@+id/userNameSetting"
+                android:layout_width="300dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="36dp"
+                android:gravity="center"
+                android:background="@drawable/white_rounded_button"
+                android:textColor="@color/blue"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/coinEarnedSetting"
+                android:layout_width="365dp"
+                android:layout_height="65dp"
+                android:background="@drawable/white_rounded_button"
+                android:layout_marginTop="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userNameSetting" />
+
+            <View
+                android:id="@+id/quizTotalPlayedSetting"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:background="@drawable/white_rounded_button"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coinEarnedSetting" />
+
+            <View
+                android:id="@+id/quizWinSetting"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/white_rounded_button"
+                app:layout_constraintStart_toEndOf="@+id/quizTotalPlayedSetting"
+                app:layout_constraintTop_toBottomOf="@+id/coinEarnedSetting" />
+
+            <View
+                android:id="@+id/quizLoseSetting"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/white_rounded_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.557"
+                app:layout_constraintStart_toEndOf="@+id/quizWinSetting"
+                app:layout_constraintTop_toBottomOf="@+id/coinEarnedSetting" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="193dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="19dp"
+                android:gravity="center"
+                android:text="@string/coins_earned"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                app:drawableLeftCompat="@drawable/coins_"
+                app:layout_constraintBottom_toBottomOf="@+id/coinEarnedSetting"
+                app:layout_constraintStart_toStartOf="@+id/coinEarnedSetting"
+                app:layout_constraintTop_toTopOf="@+id/coinEarnedSetting"
+                app:layout_constraintVertical_bias="0.73" />
+
+            <TextView
+                android:id="@+id/coinEarnedValue"
+                android:layout_width="64dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="19dp"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/coinEarnedSetting"
+                app:layout_constraintEnd_toEndOf="@+id/coinEarnedSetting"
+                app:layout_constraintHorizontal_bias="0.533"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="@+id/coinEarnedSetting"
+                app:layout_constraintVertical_bias="0.666" />
+
+            <TextView
+                android:id="@+id/totalQuizText"
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/totalquizplayed"
+                android:textColor="@color/blue"
+                app:layout_constraintEnd_toEndOf="@+id/quizTotalPlayedSetting"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="@+id/quizTotalPlayedSetting"
+                app:layout_constraintTop_toTopOf="@+id/quizTotalPlayedSetting" />
+
+            <TextView
+                android:id="@+id/totalQuizvalue"
+                android:layout_width="47dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/quizTotalPlayedSetting"
+                app:layout_constraintEnd_toEndOf="@+id/quizTotalPlayedSetting"
+                app:layout_constraintHorizontal_bias="0.452"
+                app:layout_constraintStart_toStartOf="@+id/quizTotalPlayedSetting"
+                app:layout_constraintTop_toBottomOf="@+id/totalQuizText"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/quizQinText"
+                android:layout_width="83dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/quizWin"
+                android:textColor="@color/blue"
+                app:layout_constraintEnd_toEndOf="@+id/quizWinSetting"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toStartOf="@+id/quizWinSetting"
+                app:layout_constraintTop_toTopOf="@+id/quizWinSetting" />
+
+            <TextView
+                android:id="@+id/quiizQinvalue"
+                android:layout_width="53dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/quizWinSetting"
+                app:layout_constraintEnd_toEndOf="@+id/quizWinSetting"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="@+id/quizWinSetting"
+                app:layout_constraintTop_toBottomOf="@+id/quizQinText"
+                app:layout_constraintVertical_bias="0.727" />
+
+            <TextView
+                android:id="@+id/quizLossText"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/quizLose"
+                android:textColor="@color/blue"
+                app:layout_constraintEnd_toEndOf="@+id/quizLoseSetting"
+                app:layout_constraintStart_toStartOf="@+id/quizLoseSetting"
+                app:layout_constraintTop_toTopOf="@+id/quizLoseSetting" />
+
+            <TextView
+                android:id="@+id/quizLosevalue"
+                android:layout_width="55dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/quizLoseSetting"
+                app:layout_constraintHorizontal_bias="0.511"
+                app:layout_constraintStart_toStartOf="@+id/quizLoseSetting"
+                app:layout_constraintTop_toBottomOf="@+id/quizLossText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/homeBtn"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settingBtn"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutBtn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/home"
+        tools:ignore="contentDescription" />
+
+    <ImageButton
+        android:id="@+id/settingBtn"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutBtn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/technicalsupport"
+        tools:ignore="contentDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

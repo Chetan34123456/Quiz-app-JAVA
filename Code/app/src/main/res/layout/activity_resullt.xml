@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/resultMainLayout"
+    android:layout_height="match_parent"
+    android:background="@drawable/result_final_grad"
+    tools:context=".ResulltActivity">
+
+    <View
+        android:id="@+id/scoreCard"
+        android:layout_width="280dp"
+        android:layout_height="315dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/white_rounded_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backToHomeBtn"
+        android:layout_width="198dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/white_rounded_button"
+        android:text="@string/backtohome"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreCard" />
+
+    <Button
+        android:id="@+id/anotherQuizbtn"
+        android:layout_width="196dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_rounded_button"
+        android:text="@string/anotherQuiz"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backToHomeBtn" />
+
+    <TextView
+        android:id="@+id/scoreView"
+        android:layout_width="147dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="84dp"
+        android:gravity="center"
+        android:text="@string/score"
+        android:textColor="@color/blue"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/scoreCard"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/scoreCard"
+        app:layout_constraintTop_toTopOf="@+id/scoreCard" />
+
+    <TextView
+        android:id="@+id/showScoreview"
+        android:layout_width="92dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreCard"
+        app:layout_constraintEnd_toEndOf="@+id/scoreCard"
+        app:layout_constraintTop_toBottomOf="@+id/scoreView"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="54dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreCard"
+        app:layout_constraintEnd_toStartOf="@+id/showScoreview"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="@+id/scoreCard"
+        app:srcCompat="@drawable/championcup"
+        tools:ignore="contentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

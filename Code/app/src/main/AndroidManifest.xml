@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.quiz_management">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/quizapplogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/quizapplogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ResulltActivity">
+        </activity>
+        <activity android:name=".settingActivity" />
+        <activity android:name=".introSplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".signUpActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".startQuizActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

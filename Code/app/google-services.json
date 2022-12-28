@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "810391925754",
+    "project_id": "quiz-management-179e5",
+    "storage_bucket": "quiz-management-179e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810391925754:android:029ed96e2d43361574aa43",
+        "android_client_info": {
+          "package_name": "com.example.quiz_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810391925754-u1u9q0k29or5rb6djpnl84gr0ehktgv7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quiz_management",
+            "certificate_hash": "32348a0bfef61aef121dc67ea56c178473e443d6"
+          }
+        },
+        {
+          "client_id": "810391925754-qlc8mb810jmepfg8d18legrsn8fuevoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfAr3m56E6TSs65zniQV_XNM2bYkBLtnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810391925754-qlc8mb810jmepfg8d18legrsn8fuevoa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
